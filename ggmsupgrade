@@ -1,1 +1,3 @@
-
+=OR(IF(COUNT(CHILDREN()) = 0, (IF(OR([Grant status]@row = ""), 0, [Total grant]@row)), (SUM(CHILDREN()))))
+=(IF(COUNT(CHILDREN()) = 0, (IF(OR([Amount offset]@row = ""), 0, [Amount offset]@row)), (SUM(CHILDREN()))))
+=OR(IF(COUNT(CHILDREN()) = 0, (IF(OR([Grant status]@row = ""), 0, [Total grant]@row)), (SUM(CHILDREN()))))
